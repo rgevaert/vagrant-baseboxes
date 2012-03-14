@@ -27,6 +27,7 @@ noncsw=true
 use_md5=true
 use_gpg=false
 pkgaddopts=-G
+wgetopts=-nv
 EOF
 
 /opt/csw/bin/pkgutil -U
@@ -41,6 +42,9 @@ EOF
 /opt/csw/bin/pkgutil -y -i CSWruby18
 /opt/csw/bin/pkgutil -y -i CSWruby18-dev
 /opt/csw/bin/pkgutil -y -i CSWrubygems
+/opt/csw/bin/pkgutil -y -i CSWaugeas
+/opt/csw/bin/pkgutil -y -i CSWaugeas
+/opt/csw/bin/pkgutil -y -i CSWrubyaugeas
 
 # These are needed to get a compiler working
 # Mainly because chef depends on compiling some native gems
